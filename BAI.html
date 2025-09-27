@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareSight XR</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        header {
+            background: #fff;
+            padding: 20px;
+            text-align: center;
+            border-bottom: #0779e4 3px solid;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .section {
+            padding: 40px 20px;
+            margin-bottom: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .section-title {
+            text-align: center;
+            color: #0779e4;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .content-block {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 40px;
+        }
+        .content-text {
+            flex: 1;
+            min-width: 300px;
+        }
+        .video-container {
+            flex: 1;
+            min-width: 300px;
+            background: #000;
+            position: relative;
+            aspect-ratio: 16 / 9;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        .value-prop-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .value-prop-list li {
+            background: #eef7ff;
+            margin-bottom: 15px;
+            padding: 20px;
+            border-left: 4px solid #0779e4;
+            border-radius: 4px;
+            font-size: 1.1em;
+            flex: 1;
+            min-width: 200px;
+            text-align: left;
+        }
+        .moat-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .moat-list li {
+            background: #f4f8fb;
+            margin-bottom: 15px;
+            padding: 20px;
+            border-left: 4px solid #0779e4;
+            border-radius: 4px;
+            font-size: 1.1em;
+        }
+        .persona-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .persona-card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .persona-card img, .persona-card video {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            object-fit: contain;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #777;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>CareSight XR</h1>
+    </header>
+
+    <main class="container">
+
+        <section id="company-narrative" class="section">
+            <h2 class="section-title">Company Narrative & Role of AI</h2>
+            <div class="content-block">
+                <div class="content-text">
+                    <p>CareSight XR is a solution designed to empower clinicians with instant, immersive access to patient data.</p>
+                    <p><b>Mission:</b> Empower clinicians with instant, immersive access to patient data.</p>
+                    <p><b>Vision:</b> A world where doctors see vitals & scans seamlessly in their field of view.</p>
+                    <p><b>Role of AI:</b> Patient recognition, data prioritization, intelligent visualization.</p>
+                </div>
+                <div class="video-container">
+                    <video id="video1" playsinline >
+                        <source src="/Users/hermeharbedi/Downloads/Intro.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <section id="value-prop" class="section">
+            <h2 class="section-title">Value Proposition</h2>
+            <div class="content-block">
+                <div class="content-text">
+                    <ul class="value-prop-list">
+                        <li>For <b>Doctors and Healthcare providers</b></li>
+                        <li>Dissatisfied with <b>manual scrolling of reports</b></li>
+                        <li>Due to <b>lack of platform</b>, which can meet the needs of instant, unified access to patient vitals and scans at the point of care</li>
+                        <li>CareSight XR offers <b>mixed reality healthcare interface</b></li>
+                        <li>That provides <b>real-time, AI-powered patient recognition, seamless integration of vitals/reports/scans, and hands-free visualization enabling faster, safer clinical decisions</b></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="moat-product" class="section">
+            <h2 class="section-title">Moat & Product</h2>
+            <div class="content-block">
+                <div class="content-text">
+                    <ul class="moat-list">
+                        <li><strong>Proprietary AI Models:</strong> We have advanced patient recognition trained specifically for hospital conditions (like masks and poor lighting), providing reliability that competitors can't easily match.</li>
+                        <li><strong>Deep Technical Expertise:</strong> Our solution was built by a PhD in XR with healthcare AI research experience, combining rare skills at the intersection of XR, computer vision, and clinical workflow design.</li>
+                        <li><strong>Seamless Integration Layer:</strong> Native support for FHIR and DICOM standards ensures smooth interoperability with existing EHR and PACS systems, reducing switching costs for hospitals.</li>
+                        <li><strong>Clinician-Centered Experience:</strong> The product was co-designed with a team of Veterinarian and Pediatric Doctors to ensure it fits naturally into clinical routines rather than disrupting them, for both humans and our paw friends</li>
+                        <li><strong>Academic–Industry Network:</strong> Strong research credibility and collaborations accelerate validation, adoption, and provide an early-mover advantage in XR healthcare.</li>
+                    </ul>
+                </div>
+                <div class="moat-videos" style="display: flex; flex-direction: column; gap: 20px; flex: 1;">
+                    <div class="video-container">
+                        <video id="video2" playsinline >
+                            <source src="/Users/hermeharbedi/Downloads/AR_Enhanced_OPD_A_Paperless_Future.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-container">
+                        <video id="video3" playsinline >
+                            <source src="/Users/hermeharbedi/Downloads/Main_01 - DataVisuals.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="personas" class="section">
+            <h2 class="section-title">Persona and Market Fit</h2>
+            <div class="persona-grid">
+                <div class="persona-card">
+                    <img src="/Users/hermeharbedi/Desktop/Screenshot 2025-09-24 at 11.14.23 PM.png" alt="An image representing the Emergency Doctor persona.">
+                </div>
+                <div class="persona-card">
+                    <img src="/Users/hermeharbedi/Desktop/Screenshot 2025-09-24 at 10.45.06 PM.png" alt="An image representing the Tele ICU Doctor persona.">
+                </div>
+                <div class="persona-card">
+                    <img src="/Users/hermeharbedi/Desktop/Screenshot 2025-09-24 at 11.22.00 PM.png" alt="An image representing the IT Manager persona.">
+                </div>
+                <div class="persona-card">
+                    <div class="video-container">
+                        <video id="video4" playsinline>
+                            <source src="/Users/hermeharbedi/Downloads/Product.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>Made by: Hermehar Pal Singh Bedi (PhD24501)</p>
+        <p>BAI mid sem assessment</p>
+    </footer>
+
+    <script>
+        const videos = document.querySelectorAll('video');
+        const options = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.5
+        };
+
+        const callback = (entries, observer) => {
+            entries.forEach(entry => {
+                const video = entry.target;
+                if (entry.isIntersecting) {
+                    video.play();
+                } else {
+                    video.pause();
+                }
+            });
+        };
+
+        const observer = new IntersectionObserver(callback, options);
+
+        // This will only observe video 1 and video 4
+        observer.observe(document.getElementById('video1'));
+        observer.observe(document.getElementById('video4'));
+
+        // Handle the sequential playback of video 2 and 3
+        const video2 = document.getElementById('video2');
+        const video3 = document.getElementById('video3');
+
+        // Autoplay video 2 when it comes into view
+        observer.observe(video2);
+
+        // When video 2 ends, play video 3
+        video2.addEventListener('ended', function() {
+            video3.play();
+        });
+    </script>
+</body>
+</html>
